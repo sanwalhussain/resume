@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sanwal}{Hussain}{ \urlstyle{same}\href{http://sanwalhussain.com}{sanwalhussain.com }| Al Iskan, Riyadh, Saudi Arabia\\
+\href{mailto:meetsanwal@gmail.com}{meetsanwal@gmail.com} | +966 58 061 2728
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{FEDERAL University}
+\descript{BS in Electrical Engineering}
+\location{Aug 2016 | Islamabad, Pakistan}
+College of Engineering \\
+\location{ Cum. GPA: 3.15 / 4.0 \\
+Major GPA: 3.92 / 4.0}
+\sectionsep
+
+\subsection{Murray College}
+\descript{F.Sc. Pre-Engineering}
+\location{Jan 2012 | Sialkot, Pakistan}
+\sectionsep
+
+\subsection{Cathedral High School}
+\location{Aug 2009 |  Sialkot, Pakistan}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://facebook.com/esanwalz}{\bf esanwalz} \\
+Github:// \href{https://github.com/sanwalhussain}{\bf sanwalhussain} \\
+LinkedIn://  \href{https://www.linkedin.com/in/sanwalhussain}{\bf sanwalhussain} \\
+Twitter://  \href{https://twitter.com/meetsanwal}{\bf @meetsanwal} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Online}
+Cloud Computing \\
+Data Analytics  \\
+Technical SEO \\
+Blockchain Smart Contracts \\
+Machine Learning \\
+Web3 Basic
+\sectionsep
+
+\subsection{Undergraduate}
+Industrial Electronic \\
+Control Systems \\
+Communications systems \\
+OOP and Data Structures \\
+Circuit and Electronics \\
+Signals and Systems\\
+Engineering Drawing and Analysis \\
+Computer Networks and Architecture \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+Problem Solving \textbullet{}   Critical Thinking \\ Communication\textbullet{} Business Planning \\
+\subsection{Programming}
+\location{Over 1000 lines:}
+Java \textbullet{}   Vue.js \textbullet{} Python \textbullet{} Javascript \\
+PHP \textbullet{} Matlab \\ 
+\location{Familiar:}
+Google Cloud \textbullet{} AWS \textbullet{} Tableau \\
+Odoo  \textbullet{} SAP \textbullet{} Maximo 
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Fair Deal Trading Compnay}
+\descript{| Sales Engineer }
+\location{March 2020 - Present | Riyadh, Saudi Arabia}
+\sectionsep
+
+\runsubsection{OGDCL}
+\descript{| Instrumentation Engineer at Dakhni Gas Processing Plant and Oil Field }
+\location{Aug 2019 – Dec 2019 | Jand, Pakistan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Complete work orders and provide maintenance support on automated production equipment.
+\item Calibration, testing, and trouble-shooting of control valves and other valve-related instruments.
+\item Testing and calibration of all type of process transmitters (Ft, Lt, Pt, Tt) using modern systems communicating via the HART® protocol.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hydro Tech Pak (Pvt) Ltd}
+\descript{| Assistant Shift Engineer }
+\location{Dec 2018 – July 2019 | Sialkot, Pakistan}
+\begin{tightemize}
+\item Operate and maintain the plant during the shift according to company policies and procedures.
+\item Work with the maintenance team to ascertain the condition of equipment's, required maintenance activities, and scheduled overhauls.
+\item Ensuring the standards are being followed for all tasks done.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Crown Foam Industries}
+\descript{| Assistant C\&I Engineer}
+\location{May 2017 – Nov 2018 | Sialkot, Pakistan}
+\begin{tightemize}
+\item Implement daily electrical and instrument inspection and records.
+\item Troubleshooting of automated machinery and programmed PLC, VFD \& HMI.
+\item Align, adjust and calibrate systems and equipment according to specifications and to maintain records of repairs, calibrations and tests.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{FUUAST Electrical Lab}
+\descript{| Head Undergraduate Researcher}
+\location{Mar 2015 – May 2016 | Islamabad, Pakistan}
+Led the development of \textbf{Gesture Controlled Wheelchair}, The First Ever Breakthrough GESTURE Control Wheelchair Using LEAP Motion and Home Automation. A revolutionary new invention that can be controlled with just your hands.
+\sectionsep
+
+\section{Professional Association}
+\runsubsection{Pakistan Engineering Council}
+\descript{| Registered Engineer}
+\location{PEC NO: ELECT/58486}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2016	     & Top 50/1167  & National ICT R\&D Fund (Ministry of IT)\\
+2015	     & 2\textsuperscript{nd}  & Institute of Space Technology (IST)\\
+2015	     & National  & IIUI FETEX Robotic Competition Finalist\\
+2015	     & National  & FAST NASCON '15 Finalist\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
